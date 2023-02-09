@@ -1,21 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - prints all sum of the mult
- * @void: void
- * Return: 0 if successful
+ * main - Prints natural numbers below 1024 that are
+ * multiplies of 3 or 5
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int n;
-	int sum = 0;
+	int a, b;
 
-	for (n = 0; n < 1024; n++)
+	for (a = 1; a < 1024; a++)
 	{
-	if (n % 3 == 0 || n % 5 == 0)
-	{
-	sum += n;
+		if ((a % 3) == 0 || (a % 5) == 0)
+			b += a;
 	}
-	}
-	printf("%d\n", sum);
+	printf("%d\n", b);
 	return (0);
 }

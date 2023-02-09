@@ -1,8 +1,12 @@
 #include "main.h"
+
+
 /**
- * main - prints the stdout
- * Return: 0 if successful
+ * main - check the code
+ *
+ * Return: Always 0.
  */
+
 int main(void)
 {
 	_putchar('_');
@@ -14,5 +18,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
