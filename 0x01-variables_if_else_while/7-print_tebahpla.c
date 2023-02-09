@@ -1,17 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - print stdout
- * Return: 0 if successful
+ * main - Prints reversed alphabet.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char low;
+	int i;
 
-	for (low = 'z'; low >= 'a'; low--)
+	for (i = 122; i > 96; i--)
 	{
-	putchar(low);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);

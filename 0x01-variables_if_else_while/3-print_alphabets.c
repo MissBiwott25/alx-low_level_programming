@@ -1,20 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - prints out the stdout
- * Return: 0 if successful
+ * main - Prints the alphabet.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char lower;
-	char upper;
+	char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	for (lower = 'a'; lower <= 'z'; lower++)
+	for (i = 0; i < 52; i++)
 	{
-	putchar(lower);
-	}
-	for (upper = 'A'; upper <= 'Z'; upper++)
-	{
-	putchar(upper);
+		putchar(alp[i]);
 	}
 	putchar('\n');
 	return (0);

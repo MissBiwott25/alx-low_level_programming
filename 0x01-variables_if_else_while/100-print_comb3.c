@@ -1,23 +1,36 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - prints the stdout
- * Return: 0 if successful
+ * main - Prints numbers between 00 to 89.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a;
+	int i, e;
 
-	for (a = 0; a < 90; a++)
+	i = 48;
+	e = 48;
+
+	while (e < 58)
 	{
-	putchar((a / 90) + '0');
-	putchar((a % 10) + '0');
-	if (a != 90)
-	{
-	putchar(',');
-	putchar(' ');
-	}
+		i = 48;
+		while (i < 58)
+		{
+			if (e != i && e < i)
+			{
+				putchar(e);
+				putchar(i);
+				if (i == 57 && e == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+			i++;
+		}
+		e++;
 	}
 	putchar('\n');
 	return (0);

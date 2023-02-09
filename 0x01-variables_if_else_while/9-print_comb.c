@@ -1,22 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - prints the stdout
- * Return: 0 if successful
+ * main - Prints numbers between 0 to 9 with commas and spaces.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a;
+	int i;
 
-	for (a = '0'; a <= '9'; a++)
+	for (i = 48; i < 58; i++)
 	{
-	putchar(a);
-	if (a != '9')
-	{
-	putchar(',');
-	putchar(' ');
-	}
+		putchar(i);
+		if (i != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);

@@ -1,17 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Prints the stdout
- * Return: 0 if successful
+ * main - Prints numbers between 0 to 9.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a;
+	int i;
 
-	for (a = '0'; a <= '9'; a++)
+	for (i = 48; i < 58; i++)
 	{
-	putchar(a);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
